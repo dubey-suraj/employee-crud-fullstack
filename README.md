@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EmployeeCrud
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# employee-crud-fullstack
+This project is a full stack web application developed using Angular for the frontend and Spring Boot for the backend. It demonstrates complete CRUD (Create, Read, Update, Delete) operations for managing employee records, making API calls, and handling data persistence with a MySQL database.
+>>>>>>> 82be54f2bdbce8eec4d66b5d665901ce42899fda
