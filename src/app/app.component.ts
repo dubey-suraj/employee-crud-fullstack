@@ -1,27 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { EmployeeService } from '../services/employee.service';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ButtonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   employeeData: any = [];
 
-  constructor(private employeeService: EmployeeService) {}
+  constructor() {}
 
   ngOnInit(): void {
     console.log('hello');
-    this.getEmployeeDetails();
-  }
-
-  getEmployeeDetails(): void {
-    this.employeeService.getEmployee().subscribe((data) => {
-      this.employeeData = data;
-      console.log(data)
-    });
   }
 }
