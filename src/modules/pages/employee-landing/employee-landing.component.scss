@@ -1,0 +1,32 @@
+@import "../../../../src/styles.scss";
+
+.employee-landing-screen {
+  width: 100vw;
+  height: 100vh;
+  header {
+    background: #4c956c;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin: 8px 0;
+    }
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    background: #4c956c;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+  }
+}

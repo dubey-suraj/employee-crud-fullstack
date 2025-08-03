@@ -1,0 +1,28 @@
+<div class="custom-dialog add-emp">
+  <div class="header">
+    <span>Add Employee</span>
+  </div>
+  <!-- <form [formGroup]="addEmpForm" (ngSubmit)="addEmployee()"> -->
+  <form [formGroup]="addEmpForm">
+    <div>
+      <div class="flex flex-col gap-2 mb-2">
+        <label for="firstName">First Name</label>
+        <input pInputText id="firstName" formControlName="firstName" />
+      </div>
+      <div class="flex flex-col gap-2 mb-2">
+        <label for="lastName">Last Name</label>
+        <input pInputText id="lastName" formControlName="lastName" />
+      </div>
+      <div class="flex flex-col gap-2 mb-2">
+        <label for="email">Email</label>
+        <input pInputText id="email" formControlName="email" />
+      </div>
+    </div>
+    <div class="footer">
+      <div class="add-emp-btn">
+        <button (click)="addEmployee()" class="m-2">{{btnText}}</button>
+        <button (click)="dialogRef.close('cancel')">Close</button>
+      </div>
+    </div>
+  </form>
+</div>

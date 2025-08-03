@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { EmployeeLandingComponent } from '../modules/pages/employee-landing/employee-landing.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ButtonModule],
+  imports: [EmployeeLandingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

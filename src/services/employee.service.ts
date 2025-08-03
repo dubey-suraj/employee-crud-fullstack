@@ -12,4 +12,16 @@ export class EmployeeService {
   getEmployee(): Observable<any>{
     return this.http.get(employee.Get)
   }
+
+  addEmployee(employeeData: any): Observable<any> {
+    return this.http.post(employee.Post, employeeData);
+  }
+
+  deleteEmployee(employeeId: string): Observable<any> {
+     return this.http.delete(employee.Delete.replace('{id}', employeeId));
+  }
+
+  updateEmployee(employeeData: any): Observable<any> {
+    return this.http.put(employee.Put, employeeData);
+  }
 }
